@@ -10,7 +10,6 @@ const Box = (props) => {
                 <div style={{backgroundColor: element,
                     width: "100px",
                     height: "100px"}}>
-                        Box
                     </div>
                 </div>
                 )

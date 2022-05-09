@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import UserInput from './UserInput';
 
 const UserForm = (props) => {
     const [color, setColor] = useState("");
@@ -13,7 +14,7 @@ const UserForm = (props) => {
         <div>
             <h1>Block Form</h1>
             <form onSubmit={handleSubmit}>
-            <input value={color} name="color" type="text" onChange={e => setColor(e.target.value)} placeholder="Enter Color" />
+            <UserInput placeholder="Enter Color" update={setColor} color={color} />
                 <p>
                     <button type="submit">Add Box</button>
                 </p>

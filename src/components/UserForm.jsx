@@ -16,7 +16,7 @@ const UserForm = (props) => {
             <form onSubmit={handleSubmit}>
             <UserInput placeholder="Enter Color" update={setColor} value={color} />
                 <p>
-                    <button type="submit">Add Box</button>
+                    <button disabled={color.length<1?true:false} type="submit">Add Box</button>
                 </p>
             </form>
         </div>
@@ -24,3 +24,12 @@ const UserForm = (props) => {
 }
 
 export default UserForm
+
+//<UserInput placeholder="Enter Height" update={setHeight} value={height} />
+//<UserInput placeholder="Enter Width" update={setWidth} value={width} />
+
+//setHeight("")
+//setWidth("")
+
+//const [height, setHeight] = useState("");
+//const [width, setWidth] = useState("");

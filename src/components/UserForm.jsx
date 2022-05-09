@@ -14,7 +14,7 @@ const UserForm = (props) => {
         <div>
             <h1>Block Form</h1>
             <form onSubmit={handleSubmit}>
-            <UserInput placeholder="Enter Color" update={setColor} color={color} />
+            <UserInput placeholder="Enter Color" update={setColor} value={color} />
                 <p>
                     <button type="submit">Add Box</button>
                 </p>
